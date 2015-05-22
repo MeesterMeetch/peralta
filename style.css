@@ -1,10 +1,13 @@
 html {
-  background-image: url(assets/bg.jpg);
-  background-size: cover;
+background-image: url(assets/bg.jpg);
+background-size: cover;
+opacity: 1;
 }
 
   body {
-   font: Helvetica;
+   /* display: block; */
+   /* margin: 0 auto; */
+   /* width: 70%; */
    background: transparent;
    font: 62.5%;
   }
@@ -13,48 +16,32 @@ html {
    min-height: 800px;
    margin: 0px;
    padding: 0px;
-   display: -webkit-flex;
    display:         flex;
-   -webkit-flex-flow: row;
            flex-flow: row;
    }
 
-  #main > article {
-   margin: 4px;
-   padding: 5px;
-   border: 1px solid #cccc33;
-   border-radius: 7pt;
-   background: transparent;
-   -webkit-flex: 3 1 60%;
-           flex: 3 1 60%;
-   -webkit-order: 2;
-           order: 2;
-   }
-   /* --this is currently breaking my flexbox's--*/
-/*     .slideshow-container {
-  position: relative;
-  display: block;
-  width: 100%;
-  margin: 10px 0;
-  background: transparent;
-} */
-
   #main > nav {
-   margin: auto;
-   padding: 5px;
+   margin: 4px;
+   padding-bottom: 50%;
+   padding-top: 50%;
+   padding-left: .3%;
+   padding-right: .3%;
    border: 1px solid #8888bb;
    border-radius: 7pt;
+   font-size: 62.5%;
    background: darkred;
-   -webkit-flex: 1 6 20%;
            flex: 1 6 20%;
-   -webkit-order: 1;
            order: 1;
    }
 
 #main > nav > div p {
   text-align: center;
+  font: 62.5%;
   color: white;
   font-weight: 500;
+}
+#main > .bannerLinks {
+  display: inline;
 }
 
   #main > aside {
@@ -62,19 +49,20 @@ html {
    padding: 5px;
    border: 1px solid transparent;
    border-radius: 7pt;
-   background: transparent;
-   -webkit-flex: 1 6 20%;
+   background-color: darkred;
            flex: 1 6 20%;
-   -webkit-order: 3;
            order: 3;
    }
 
   header {
-  display: flex:inline-block;
+  /* display: flex; */ removing allows the inner divs to be on their own line
+  display: block;
+  justify-content: center;
   text-align: right;
   margin: 4px;
-  padding: 5px;
-  min-height: 100px;
+  padding-left: 20%;
+  padding-right: 20%;
+  min-height: 50px;
   border: 1px solid #eebb55;
   border-radius: 7pt;
   background: lightgrey;
@@ -85,7 +73,7 @@ html {
     text-align: right;
     padding: 1em;
   }
-  
+
 
   header > div > i:nth-of-type(1) {
     color:#4B67A0;
@@ -105,8 +93,20 @@ html {
     color:#C2181E;
     font-size: 40px;
   }
-  .bannerLinks section {
 
+  .bannerlinks {
+    align-self: flex-end;
+    padding: 1em;
+/*     padding-left: 0;
+padding-right: 0;
+padding-top: 0;
+padding-bottom: 0; */
+  }
+
+  .bannerlinks ul {
+    display: inline;
+  }
+  .bannerLinks ul li {
     margin: auto;
     padding: 5px;
     border: 1px solid #8888bb;
@@ -117,7 +117,7 @@ html {
 
   }
 
-  .bannerLinks section a {
+  .bannerLinks ul li a {
     text-decoration: none;
     text-align: center;
     color: white;
@@ -134,6 +134,54 @@ html {
    border-radius: 7pt;
    background: lightgrey;
    }
+
+   #main > article {
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    width: 70% auto;
+    height: auto;
+    background: yellow;
+            flex: 3 1 60%;
+            order: 2;
+    }
+
+   article .logoCameraManWrapper {
+     display: flex;
+     width: 99%;
+     height: 200px auto;
+
+   }
+   /* resize images */
+   article .topImage {
+     width: 99%;
+     height: auto;
+   }
+   article .logoWrapper {
+     width: 50%;
+     height: auto;
+     
+   }
+
+
+   .skatersWrapper {
+
+     width: 99%;
+   }
+
+   .inLeftSk8ers {
+
+     width: 50%;
+     align-items: flex-start;
+   }
+
+   .tommyGuerreroContainer {
+
+     width: 50%;
+     align-items: flex-end;
+   }
+
 
   /* Too narrow to support three columns */
   @media all and (max-width: 640px) {
@@ -152,5 +200,8 @@ html {
    #main > nav, #main > aside, header, footer {
     min-height: 50px;
     max-height: 50px;
+   }
+   #main > nav, #main > aside {
+     display: none;
    }
   }
