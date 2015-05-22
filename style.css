@@ -29,7 +29,6 @@ opacity: 1;
    border: 1px solid #8888bb;
    border-radius: 7pt;
    font-size: 62.5%;
-   background: darkred;
            flex: 1 6 20%;
            order: 1;
    }
@@ -49,7 +48,6 @@ opacity: 1;
    padding: 5px;
    border: 1px solid transparent;
    border-radius: 7pt;
-   background-color: darkred;
            flex: 1 6 20%;
            order: 3;
    }
@@ -65,7 +63,6 @@ opacity: 1;
   min-height: 50px;
   border: 1px solid #eebb55;
   border-radius: 7pt;
-  background: lightgrey;
   }
 
   .socialWrapper {
@@ -111,9 +108,9 @@ padding-bottom: 0; */
     padding: 5px;
     border: 1px solid #8888bb;
     border-radius: 7pt;
-    background: darkred;
     position: relative;
     display: inline-flex;
+    background-color: darkred;
 
   }
 
@@ -132,7 +129,6 @@ padding-bottom: 0; */
    min-height: 100px;
    border: 1px solid #eebb55;
    border-radius: 7pt;
-   background: lightgrey;
    }
 
    #main > article {
@@ -142,26 +138,28 @@ padding-bottom: 0; */
     border-radius: 7pt;
     width: 70% auto;
     height: auto;
-    background: yellow;
             flex: 3 1 60%;
             order: 2;
     }
 
    article .logoCameraManWrapper {
-     display: flex;
+     background-image: url(assets/peralta-logo.png), background-repeat:no-repeat;
+     background-image: url(assets/top-image.png), background-repeat:no-repeat;
+
+     display: block;
      width: 99%;
      height: 200px auto;
 
    }
    /* resize images */
-   article .topImage {
-     width: 99%;
-     height: auto;
+/*    article .topImage {
+  width: 99%;
+  height: auto; */
    }
    article .logoWrapper {
      width: 50%;
      height: auto;
-     
+
    }
 
 
