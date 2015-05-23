@@ -153,52 +153,82 @@ padding-bottom: 0; */
       height: auto;
               flex: 3 1 60%;
               order: 1;
-
-      /* display: block; */
-      /* position: relative; */
-      /* width: 99%; */
       padding-bottom: 26%;
       background-image: url(assets/top-image.png);
           background-size: cover;
           background-repeat: no-repeat;
           z-index: 1;
+      }
+
+      .newsWrapper {
+        display: flex;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #cccc33;
+        border-radius: 7pt;
+        height: auto;
+                flex: 3 1 60%;
+                order: 1;
+        padding-bottom: 26%;
+      }
+
+      .tonyHawkWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #cccc33;
+        border-radius: 7pt;
+        height: auto;
+                flex: 3 1 60%;
+                order: 1;
+        background-color: white;
+      }
+
+      .rodneyMullenWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #cccc33;
+        border-radius: 7pt;
+        height: auto;
+                flex: 3 1 60%;
+                order: 1;
+        background-color: white;
+      }
+
+      .rayBareeWrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        margin: 4px;
+        padding: 5px;
+        border: 1px solid #cccc33;
+        border-radius: 7pt;
+        height: auto;
+                flex: 3 1 60%;
+                order: 1;
+        background-color: white;
+      }
+
+      h3 {
+        text-align: -webkit-left;
+      }
 
 
-
-
-/*       background-image: url(assets/peralta-logo.png);
-
-    background-size: cover;
-    background-position: center;
-    z-index: 2;
-    height: auto; -->
-
-
-
-/*       background:
-  url(assets/peralta-logo.png) width: 99% no-repeat z-index: 2,
-  url(assets/top-image.png) width: 99% no-repeat z-index: 1;
-   } */
-
-    }
-/*     .logo1 {
-  position: absolute;
-  width: 99%; */
-/*       z-index: 2; */
-/*       margin: 0; */
-    }
-
-/*     .logoBack {
-  position: absolute;
-  width: 99%;
-  z-index: 1;
-  margin: 0;
-  background-size: cover;
-} */
-
-
-
-   .skatersWrapper {
+  .skatersWrapper {
+    display: flex;
+    margin: 4px;
+    padding: 5px;
+    border: 1px solid #cccc33;
+    border-radius: 7pt;
+    height: auto;
+            flex: 3 1 60%;
+            order: 1;
+    padding-bottom: 26%;
 
      width: 99%;
    }
