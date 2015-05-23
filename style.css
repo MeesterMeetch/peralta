@@ -141,26 +141,61 @@ padding-bottom: 0; */
             flex: 3 1 60%;
             order: 2;
     }
+    article > div {
+      position: relative;
+    }
 
-   article .logoCameraManWrapper {
-     background-image: url(assets/peralta-logo.png), background-repeat:no-repeat;
-     background-image: url(assets/top-image.png), background-repeat:no-repeat;
+    .logoCameraManWrapper {
+      margin: 4px;
+      padding: 5px;
+      border: 1px solid #cccc33;
+      border-radius: 7pt;
+      height: auto;
+              flex: 3 1 60%;
+              order: 1;
 
-     display: block;
-     width: 99%;
-     height: 200px auto;
+      /* display: block; */
+      /* position: relative; */
+      /* width: 99%; */
+      padding-bottom: 26%;
+      background-image: url(assets/top-image.png);
+          background-size: cover;
+          background-repeat: no-repeat;
+          z-index: 1;
 
-   }
-   /* resize images */
-/*    article .topImage {
+
+
+
+/*       background-image: url(assets/peralta-logo.png);
+
+    background-size: cover;
+    background-position: center;
+    z-index: 2;
+    height: auto; -->
+
+
+
+/*       background:
+  url(assets/peralta-logo.png) width: 99% no-repeat z-index: 2,
+  url(assets/top-image.png) width: 99% no-repeat z-index: 1;
+   } */
+
+    }
+/*     .logo1 {
+  position: absolute;
+  width: 99%; */
+/*       z-index: 2; */
+/*       margin: 0; */
+    }
+
+/*     .logoBack {
+  position: absolute;
   width: 99%;
-  height: auto; */
-   }
-   article .logoWrapper {
-     width: 50%;
-     height: auto;
+  z-index: 1;
+  margin: 0;
+  background-size: cover;
+} */
 
-   }
 
 
    .skatersWrapper {
