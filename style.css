@@ -214,10 +214,43 @@ padding-bottom: 0; */
         background-color: white;
       }
 
-      h3 {
+      .newsWrapper > div > h3 {
         text-align: -webkit-left;
+        font-family: serif;
+        font-size: 75%;
+        font-weight: bold;
+        color: #4c5e5a;
+        justify-content: space-between;
+        padding: 1%;
+
       }
 
+      .article {
+        font-size: 55%;
+        font-family: serif;
+        font-size: 62.5%;
+        color: #4c5e5a;
+        justify-content: space-between;
+        padding: 1%;
+
+      }
+
+      .date {
+        font-size: 55%;
+        font-family: serif;
+        font-size: 50%;
+        color: lightgrey;
+        justify-content: space-between;
+        padding: 1%;
+
+      }
+
+      .readMore {
+        font-size: 80%;
+        font-family: serif;
+        color: red;
+        
+      }
 
   .skatersWrapper {
     display: flex;
@@ -232,6 +265,7 @@ padding-bottom: 0; */
 
      width: 99%;
    }
+
 
    .inLeftSk8ers {
 
