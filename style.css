@@ -278,6 +278,10 @@ padding-bottom: 0; */
 
   .skatersWrapper {
     display: flex;
+    color: white;
+    font-size: -webkit-xx-large;
+    font-family: sans-serif;
+    font-weight: bolder;
 /*     justify-content: space-between;
 position: relative;
 top: 10px;
@@ -509,7 +513,7 @@ background-repeat: no-repeat; */
     min-height: 50px;
     max-height: 50px;
    }
-   
+
    #main > nav, #main > aside {
      display: none;
    }
