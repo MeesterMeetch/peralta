@@ -6,30 +6,7 @@ opacity: 1;
 }
 
 
-/*
-body{
-  background-image: url("assets/bg.jpg");
-  background-repeat: no-repeat;
-  background-size: cover;
-}
-
-body:before {
-  content;
-  position: fixed;
-  top: 0;
-  left:0;
-  right: 0;
-  bottom: -1254px;
-  background-image: linear-gradient(to top left, #000, #070719);
-  opacity: .4;
-  z-index:-1
-
-} */
-
   body {
-   /* display: block; */
-   /* margin: 0 auto; */
-   /* width: 70%; */
    background: transparent;
    font: 62.5%;
   }
@@ -189,63 +166,34 @@ padding-bottom: 0; */
         flex-direction: row;
         margin: 0%;
         padding: 0%;
-        border: 1px solid #cccc33;
-        border-radius: 7pt;
         height: 100%;
                 flex: 3 1 60%;
                 order: 1;
       }
 
-      .tonyHawkWrapper {
+      .newsWrapper > div {
         display: flex;
         flex-direction: column;
         justify-content: space-between;
         margin: 4px;
-        padding: 5px;
-        border: 1px solid #cccc33;
-        border-radius: 7pt;
+        padding: 28px;
         height: auto;
                 flex: 3 1 60%;
                 order: 1;
         background-color: white;
       }
 
-      .rodneyMullenWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 4px;
-        padding: 5px;
-        border: 1px solid #cccc33;
-        border-radius: 7pt;
-        height: auto;
-                flex: 3 1 60%;
-                order: 1;
-        background-color: white;
-      }
-
-      .rayBareeWrapper {
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        margin: 4px;
-        padding: 5px;
-        border: 1px solid #cccc33;
-        border-radius: 7pt;
-        height: auto;
-                flex: 3 1 60%;
-                order: 1;
-        background-color: white;
-      }
+      .newsWrapper > div:hover {
+        color: white;
+        font-family: Helvetica;
+        background-color: rgb(255, 255, 149);; }
 
       .newsWrapper > div > h3 {
-        text-align: -webkit-left;
-        font-family: serif;
-        font-size: 75%;
-        font-weight: bold;
-        color: #4c5e5a;
-        justify-content: space-between;
-        padding: 1%;
+        font-size: 20px;
+        color: #363731;
+        text-align: left;
+        margin-bottom: 4px;
+        line-height: normal;
 
       }
 
@@ -256,32 +204,41 @@ padding-bottom: 0; */
         color: #4c5e5a;
         justify-content: space-between;
         padding: 1%;
+        color: #545454;
+        font-size: 11px;
+        line-height: 22px;
 
       }
 
       .date {
-        font-size: 55%;
-        font-family: serif;
-        font-size: 50%;
-        color: lightgrey;
         justify-content: space-between;
         padding: 1%;
+        font-size: 14px;
+        color: #b1b1b1;
+        text-align: left;
+        margin-bottom: 3px;
 
       }
 
-      .readMore {
-        font-size: 80%;
-        font-family: serif;
-        color: red;
-
+      .newsWrapper > div > a {
+        display: block;
+        font-size: 14px;
+        color: #df1a1a;
+        font-weight: bold;
+        text-align: center;
       }
+
+      .newsWrapper > div > a:hover {
+        color: white;
+        background-color: red; }
 
   .skatersWrapper {
     display: flex;
     color: white;
-    font-size: -webkit-xx-large;
     font-family: sans-serif;
     font-weight: bolder;
+    min-height: 340px;
+    min-width: 98%;
 /*     justify-content: space-between;
 position: relative;
 top: 10px;
@@ -415,20 +372,19 @@ height: 100%;
 } */
    /* END OF PROFILES */
 .skatersColumnLeft {
-  display: inline-flex;
-  flex-direction: column;
-  justify-content: space-around;
-  width: 99%;
-align-items: flex-start;
-  height: 99%;
-  min-height: 400px;
-  border: 2px solid black;
+    display: inline-flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 99%;
+    height: 99%;
+    margin: .5% auto;
+    position: relative;
 }
 .top2skaters {
   display: inline-flex;
   flex-direction: row;
   justify-content: space-around;
-  min-height: 320px;
+  /* min-height: 320px; */
   min-width: 98%;
 }
 
@@ -457,6 +413,8 @@ align-items: flex-start;
   background-color: white;
   padding: 2%;
   min-width: 98%;
+  position: absolute;
+  bottom: 1%;
 }
 
 .steveCaballeroContainer {
@@ -468,7 +426,7 @@ align-items: flex-start;
   background-image: url(assets/sk8er-1.png);
   background-size: cover;
   background-repeat: no-repeat;
-  min-height: 350px;
+  /* min-height: 350px; */
   border: 2px black solid;
   background-position: center;
 }
@@ -494,6 +452,41 @@ background-repeat: no-repeat; */
   margin: .5% auto white;
   min-width: 1%;
 }
+
+.boardsWrapper{
+  background-color: white;
+  height: 99%;
+  width: 100%;
+  display: flex;
+  position:relative;
+  justify-content: center;
+}
+
+.boardsPics{
+  justify-content: space-between;
+  margin-top: 25px;
+  margin-bottom: 25px;
+  width: 80%;
+
+}
+
+}
+.boardsPics > img {
+    -webkit-transition: all 2s ease; /* Safari and Chrome */
+    -moz-transition: all 2s ease; /* Firefox */
+    -ms-transition: all 2s ease; /* IE 9 */
+    -o-transition: all 2s ease; /* Opera */
+    transition: all 2s ease;
+}
+
+.boardsPics > img:hover {
+    -webkit-transform:scale(1.15); /* Safari and Chrome */
+    -moz-transform:scale(1.15); /* Firefox */
+    -ms-transform:scale(1.15); /* IE 9 */
+    -o-transform:scale(1.15); /* Opera */
+     transform:scale(1.15);
+}
+
 
   /* Too narrow to support three columns */
   @media all and (max-width: 640px) {
