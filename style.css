@@ -1,8 +1,30 @@
 html {
 background-image: url(assets/bg.jpg);
 background-size: cover;
+/* background-image: linear-gradient(to top left, #000, #070719); */
 opacity: 1;
 }
+
+
+/*
+body{
+  background-image: url("assets/bg.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+body:before {
+  content;
+  position: fixed;
+  top: 0;
+  left:0;
+  right: 0;
+  bottom: -1254px;
+  background-image: linear-gradient(to top left, #000, #070719);
+  opacity: .4;
+  z-index:-1
+
+} */
 
   body {
    /* display: block; */
@@ -403,6 +425,7 @@ align-items: flex-start;
   flex-direction: row;
   justify-content: space-around;
   min-height: 320px;
+  min-width: 98%;
 }
 
 .rodneyMullenContainer {
@@ -429,6 +452,7 @@ align-items: flex-start;
   justify-content: center;
   background-color: white;
   padding: 2%;
+  min-width: 98%;
 }
 
 .steveCaballeroContainer {
@@ -442,6 +466,7 @@ align-items: flex-start;
   background-repeat: no-repeat;
   min-height: 350px;
   border: 2px black solid;
+  background-position: center;
 }
 
 .skatersColumnRight {
@@ -455,6 +480,7 @@ align-items: flex-start;
   background-image: url(assets/sk8er-2.png);
   background-size: cover;
   background-repeat: no-repeat;
+  background-position: center;
 
 }
 .tommyPic {
@@ -470,7 +496,7 @@ background-repeat: no-repeat; */
 
    #main, #page {
     -webkit-flex-flow: column;
-            flex-direction: column;
+    flex-direction: column;
    }
 
    #main > article, #main > nav, #main > aside {
@@ -483,6 +509,7 @@ background-repeat: no-repeat; */
     min-height: 50px;
     max-height: 50px;
    }
+   
    #main > nav, #main > aside {
      display: none;
    }
