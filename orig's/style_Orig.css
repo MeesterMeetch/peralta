@@ -26,7 +26,7 @@ opacity: 1;
    }
 
   #main > nav {
-   margin: 4px;
+   margin: .25em;
    padding-bottom: 50%;
    padding-top: 50%;
    padding-left: .3%;
@@ -509,7 +509,7 @@ box-shadow: 0px 5px 1px 0px rgba(136, 136, 136, 0.6);
 
 
   /* Too narrow to support three columns */
-  @media all and (max-width: 640vw) {
+  @media all and (max-width: 640em) {
 
    #main {
     -webkit-flex-flow: column;
@@ -523,8 +523,8 @@ box-shadow: 0px 5px 1px 0px rgba(136, 136, 136, 0.6);
    }
 
    #main > nav, #main > aside, header, footer {
-    min-height: 50vw;
-    max-height: 50vw;
+    min-height: 50em;
+    max-height: 50em;
    }
 
    #main > nav, #main > aside {
